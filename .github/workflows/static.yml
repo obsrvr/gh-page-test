@@ -31,11 +31,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Checkout aoe-radar
-        uses: actions/checkout@v4
-        with:
-          repository: AOEpeople/aoe_technology_radar
-          path: aoe-radar
       - name: Generate index file
         run: echo "test page" > index.html
       - name: Setup Pages
